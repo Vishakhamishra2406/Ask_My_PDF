@@ -1,11 +1,18 @@
+# Python cache
 __pycache__/
-*.env
 *.pyc
 *.pyo
 *.pyd
+
+# Environment files
+.env
 .env.*
+*.env
+
+# OS / Editor junk
 .DS_Store
 .vscode/
 .idea/
 
-.streamlit/ 
+# Streamlit
+.streamlit/
