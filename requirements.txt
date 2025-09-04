@@ -2,9 +2,14 @@
 streamlit==1.37.0
 python-dotenv==1.0.1
 pymupdf==1.24.9
-faiss-cpu==1.12.0
-langchain==0.3.27
-langchain-community==0.3.29
-langchain-google-genai==2.0.10
-google-generativeai==0.8.5
 
+# FAISS - use stable fallback for compatibility
+faiss-cpu==1.7.4
+
+# LangChain ecosystem (matched versions)
+langchain==0.2.14
+langchain-community==0.2.12
+langchain-google-genai==0.0.11
+
+# Google GenAI SDK
+google-generativeai==0.8.5
