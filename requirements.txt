@@ -1,9 +1,12 @@
-streamlit
-langchain
-faiss-cpu
-pymupdf
-python-dotenv
-langchain-community
-google-generativeai
+streamlit==1.37.0
+python-dotenv==1.0.1
+pymupdf==1.24.9
+faiss-cpu==1.8.0.post1
 
-langchain-google-genai
+# LangChain core + community split
+langchain==0.2.14
+langchain-community==0.2.12
+
+# Google GenAI
+google-generativeai==0.8.5
+langchain-google-genai==0.0.11
