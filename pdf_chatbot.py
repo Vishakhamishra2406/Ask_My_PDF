@@ -1,7 +1,7 @@
 import fitz  # PyMuPDF
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from langchain.chains import RetrievalQA
 import os
 from utils import ensure_event_loop
@@ -104,4 +104,5 @@ class PDFChatbot:
             response = model.generate_content(prompt)
             return response.text
         except Exception as e:
+
             raise RuntimeError(f"Failed to get answer: {e}")
